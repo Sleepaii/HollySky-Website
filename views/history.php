@@ -3,7 +3,7 @@
     <b>Attention:</b> Cette page n'est visible que sur un ordinateur !
   </div>
 </div>
-<div class="container team phone-hide">
+<div class="container team phone-hide history">
   <div class="content" style="background:none;">
 
     <div class="row">
@@ -209,93 +209,4 @@
   <br><br>
 
 </div>
-<style media="screen">
-  p {
-    margin: 0px;
-    text-align: justify;
-  }
-  h2 {
-    text-align: center;
-    font-weight: 800;
-  }
 
-  .logo {
-    height:100px;
-    width:100px;
-    background-image: url("https://hollysky.fr/views/default/webroot/img/background_blur.png");
-    background-size: cover;
-    border-radius: 5px;
-  }
-  .logoFilter {
-    background-color: rgba(58,171,87,.8);
-    border-radius: 5px;
-  }
-
-  .team .info {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .team .name {
-    font-weight: 800;
-    font-size: 25px;
-    color:black;
-  }
-  .team .date {
-    font-style:oblique;
-  }
-
-  .team .bd-left {
-    border-left:rgba(0,0,0,.2) 3px solid;
-    margin-left:-3px;
-    color: red;
-  }
-  .team .bd-right {
-    border-right:rgba(0,0,0,.2) 3px solid;
-  }
-  .bg img {
-    width: 100%;
-  }
-  .profile {
-    width:30px;
-    border-radius: 50%;
-  }
-
-
-  .content-team {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  .content-left {
-    margin-left: -50px;
-  }
-  .content-left img {
-    margin-left: 10px;
-  }
-  .content-left .bgFilter {
-    padding: 20px;
-    border-radius: 5px 0px 0px 5px;
-  }
-  .content-left .bg {
-    border-radius: 5px 0px 0px 5px;
-    background-size: cover;
-  }
-  .content-right {
-    margin-right: -50px;
-  }
-  .content-right img {
-    margin-right: 10px;
-  }
-  .content-right .bgFilter {
-    padding: 20px;
-    border-radius: 0px 5px 5px 0px;
-  }
-  .content-right .bg {
-    border-radius: 0px 5px 5px 0px;
-    background-size: cover;
-  }
-  .badge-grey {
-    background-color: rgb(238,238,238);
-  }
-
-</style>
