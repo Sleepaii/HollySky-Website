@@ -1,0 +1,537 @@
+/**
+* CSS for HollySky
+* Made by Tronai
+*
+* Main color : rgba(58,171,87,1)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: rgba(236,236,236,1);
+  height: 100%;
+  overflow-x: hidden;
+}
+a:hover {
+  text-decoration: none;
+}
+.right {
+  float: right
+}
+.left {
+  float:left;
+}
+.color {
+  color: rgba(58,171,87,1);
+}
+.white {
+  color:white;
+}
+.alert-warning {
+  color: rgba(255,195,0,.75);
+  border: 1px solid rgba(255,195,0,.5);
+  background-color: rgba(255,195,0,.05);
+  border-radius: 3px;
+  margin-top: 10px;
+  margin:0px;
+}
+.alert-success {
+  color: rgba(58,171,87,0.75);
+  border: 1px solid rgba(58,171,87,0.5);
+  background-color: rgba(58,171,87,0.15);
+  border-radius: 3px;
+  margin: 0px;
+}
+.label-success {
+  border-radius: 3px;
+  margin: 0px;
+  color: rgba(58,171,87,1);
+  background-color: rgba(58,171,87,0.3);
+}
+.alert-danger {
+  color: rgba(231,76,60,.75);
+  border: 1px solid rgba(231,76,60,.5);
+  background-color: rgba(231,76,60,.15);
+  border-radius: 3px;
+  margin: 0px;
+}
+.alert-vote {
+  color: white;
+  border: 0px;
+  background-color: rgba(231,76,60,1);
+  border-radius: 0px;
+  margin: 0px;
+  padding: 7.5px;
+}
+.alert-vote a {
+  color:rgba(231,76,60,1);
+  background:rgba(255,255,255,1);
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 2px 15px 2px 15px;
+  margin-top: -3px;
+}
+
+.alert-danger a {
+  color: rgba(231,76,60,.75);
+}
+.content {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  z-index: 99999999;
+  position: relative;
+}
+.content-padding {
+  padding: 20px;
+}
+.contentHeading, .contentBody {
+  padding: 15px 20px;
+}
+.contentHeading h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+.contentHeading {
+  border-bottom: 1px solid rgb(240,240,240);
+}
+.contentBody p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  font-size: 14px;
+}
+.img100 {
+  width: 100%;
+}
+.imgBlackWhite {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%); /* Firefox */
+}
+hr {
+  width: 20%;
+  border: 3px solid rgba(58,171,87,1);
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+label {
+  color:black;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.pagetitle {
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.pagesubtitle {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/** Bootstrap **/
+.btn-large {
+  width: 100%;
+}
+.btn-success {
+  border-radius: 3px;
+  background-color: rgba(58,171,87,1);
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+.form-control {
+  border: 0px;
+  background-color: rgb(233,233,233);
+  margin-top: 0px;
+  padding: 20px;
+}
+.form-control::placeholder {
+  color:rgb(143,143,143);
+}
+
+
+/** Notify **/
+.notify-icon {
+  margin-right: 10px;
+}
+
+/** Custom **/
+#heading {
+  background-image: url("../img/background_blur.png");
+}
+#heading .filter {
+  background: linear-gradient(to right, rgba(0,0,0,.9), rgba(24,56,44,.9), rgba(0,0,0,.9));
+}
+#heading .navbar {
+  padding: 20px;
+}
+#heading .nav-link {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+  color:rgba(156,182,171,.7);
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+#heading .nav-link:hover {
+  color:rgba(209,226,219,.85);
+}
+#heading .nav-active {
+  color:white;
+}
+#heading .btnShop {
+  -webkit-box-shadow: 0px 0px 42px 1px rgba(58,171,87,0.73);
+  box-shadow: 0px 0px 42px 1px rgba(58,171,87,0.73);
+  background-color: #29bb4f;
+  padding: 7px 37px;
+  border-radius: 35px;
+  border: 3px solid #349a4e;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color:white;
+  animation-name: btnShop;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+#heading img {
+  margin-bottom: -90px;
+  margin-top: 25px;
+  width: 90%;
+  z-index: 9999;
+  position:relative;
+}
+.bar {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 3px solid rgba(47,47,47,.05);
+  padding: 30px;
+  margin-bottom: 25px;
+}
+#heading .phone-menu {
+  padding: 20px;
+}
+#heading #dropdownMenu2 {
+  color:white;
+  background: rgba(255,255,255,0);
+  border: 0;
+  box-shadow: 0;
+  font-size: 30px;
+}
+#belowHeader {
+  position: relative;
+  z-index: 1;
+  height: 120px;
+  margin-top: -24px;
+}
+#belowHeader:after {
+  content: "";
+  width: 4000px;
+  height: 300px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -264px;
+  left: 50%;
+  margin-left: -2000px;
+  background-color: rgba(236,236,236,1);
+  border-top: 3px solid rgba(47,47,47,.05);
+  /**-webkit-box-shadow: inset 0px 11px 30px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px 11px 30px 0px rgba(0,0,0,0.15);**/
+}
+#belowHeader:before {
+  content: "";
+  width: 4000px;
+  height: 300px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -2000px;
+  background: rgb(255, 255, 255);
+}
+.ipBar {
+  text-transform: uppercase;
+  font-weight: 900;
+  color:black;
+}
+.badge-online {
+  background-color: rgba(58,171,87,.3);
+  border: 1px solid rgba(58,171,87,1);
+  border-radius: 10px;
+  color:rgba(58,171,87,1);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-discord {
+  background-color: rgba(114,137,218,.3);
+  border: 1px solid #7289da;
+  border-radius: 10px;
+  color:#7289da;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.badge-first {
+  background-color: rgba(245,176,65,.3);
+  border: 1px solid #F5B041;
+  border-radius: 10px;
+  color:#F5B041;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-second {
+  background-color: rgba(86,101,115,.3);
+  border: 1px solid #566573;
+  border-radius: 10px;
+  color:#566573;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-third {
+  background-color: rgba(147,81,22,.3);
+  border: 1px solid #935116;
+  border-radius: 10px;
+  color:#935116;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-undefined {
+  background-color: rgba(0,0,0,.3);
+  color:#black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.infoBar {
+  margin-top: 20px;
+}
+.hide {
+  display: none;
+}
+.discordBtn {
+  border-radius: 5px;
+  background-image: url("../img/background_blur.png");
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.filterDiscordBtn {
+  border-radius: 5px;
+  background-color: rgba(114,137,218,.925);
+  padding: 15px 10px;
+  padding-bottom: 10px;
+  color:white;
+}
+.tiktokBtn {
+  border-radius: 5px;
+  background-image: url("../img/background_blur.png");
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.filterTiktokBtn {
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(238,29,29,.93), rgba(105,201,208,.925));
+  padding: 15px 10px;
+  padding-bottom: 10px;
+  color:white;
+}
+.filterTwitterBtn {
+  border-radius: 5px;
+  background-color: rgba(0,172,238,.925);
+  padding: 15px 10px;
+  padding-bottom: 10px;
+  color:white;
+}
+.DiscordBtn img {
+  margin-left: 10px;
+}
+.discordBtn .col-lg-9 {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.DiscordBtnH4 {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0px!important;
+  margin: 0px!important;
+  margin-bottom: -5px!important;
+}
+.numberDiscordBtn {
+  color:rgba(255,255,255,.6);
+  margin: 0px!important;
+  font-size: 13px;
+  font-style: 700px;
+  margin-top: -5px!important;
+}
+.btn-login {
+  margin-bottom: 10px;
+}
+.contentLogin {
+  background-image: url("https://cdn.discordapp.com/attachments/702959846642679820/836992979168264252/HollySky_nb.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.filterLogin {
+  background: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(255,255,255,1) 30%);
+  border-radius: 5px;
+}
+.filterLoginToRight {
+  background: linear-gradient(to right, rgba(255,255,255,11), rgba(255,255,255,0) 30%);
+  padding: 20px;
+  border-radius: 5px;
+}
+.contentLogin h2 {
+  text-transform: uppercase;
+  color:black;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+.contentLogin .form-control {
+  margin-bottom: 10px;
+}
+
+/** FOOTER **/
+#footer {
+  margin-top: 100px;
+}
+#footer .vote {
+  background-image: url("../img/background_blur.png"); /** ../img/background_blur.png*/
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+}
+#footer .voteFilter {
+  background-color: rgba(58,171,87,.7);
+  padding: 50px;
+  text-align:center;
+}
+#footer .vote h3 {
+  padding: 0px;
+  margin: 0px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#footer .top {
+  background-color: #242737;
+  padding: 50px;
+  margin: 0px;
+}
+#footer .bottom {
+  background-color: #202230;
+  padding: 20px;
+  margin: 0px;
+}
+#footer .top h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  color:white;
+}
+#footer .top p {
+  font-size: 15px;
+  text-align: justify;
+  color: #515678;
+  margin-top: 10px;
+}
+#footer .ip {
+  width: 100%;
+  background-color: #2f3346;
+  border-radius: 20px;
+  padding: 7.5px 20px;
+  color:white;
+  text-align: center;
+  border:0px;
+}
+.copyrightTop {
+  color:#8a8e9f;
+  font-weight: 700;
+  font-size: 15px;
+}
+.copyrightBottom {
+  color:#4c5063;
+  font-size: 14px;
+}
+.copyrightBottom a {
+  color:#4c5063;
+}
+.news {
+  padding: 10px;
+}
+.news h3 {
+  font-weight: 900;
+  font-size: 25px;
+  color:black;
+  text-transform: uppercase;
+}
+.news p {
+  margin-top: 10px;
+}
+.news .sign {
+  font-family: 'Nothing You Could Do', cursive;
+  text-align:right;
+  font-weight: bold;
+  font-size: 20px;
+}
+.vote h1 {
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.vote h2 {
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.shoparticles h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-warn, .badge-warning {
+  color:rgba(255,195,0,1);
+  background-color:rgba(255,195,0,.3);
+  border:rgba(255,195,0,1) 1px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-sp {
+  color:#fc3754;
+  background-color:rgba(252,56,85,.3);
+  border:#fc3754 1px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.badge-danger {
+  color:rgba(231,76,60,1);
+  background-color:rgba(231,76,60,.3);
+  border:rgba(231,76,60,1) 1px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.notificationprofile {
+  background-color: #e74c3c;
+  border-radius: 50%;
+  color:white;
+  padding: 0px 5px;
+  font-size:12.5px;
+
+  position:absolute;
+  margin-left: -8px;
+  margin-top: -5px;
+}
